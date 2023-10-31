@@ -6,4 +6,3 @@ def pow(a, b):
     if b < 0:
         return 1/pro
     return pro
-
