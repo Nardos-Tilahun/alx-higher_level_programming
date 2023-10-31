@@ -11,10 +11,10 @@ listint_t *insert_node(listint_t **head, int number)
 	listint_t *move, *ptr;
 
 	if (!head && !*head)
-		return (0);
+		return (NULL);
 	ptr = malloc(sizeof(listint_t));
 	if (!ptr)
-		return (0);
+		return (NULL);
 	ptr->n = number;
 	move = *head;
 	if (number < move->n)
