@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-if __name__ = "__main__":
+if __name__ == "__main__":
     import sys
 
 argvec = sys.argv
-arglen = len(sys.argv - 1)
+arglen = len(sys.argv)- 1
 if arglen == 0:
     print("{} arguments.".format(arglen))
 else:
