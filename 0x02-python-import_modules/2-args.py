@@ -3,14 +3,13 @@ if __name__ = "__main__":
     import sys
 
 argvec = sys.argv
-arglen = len(sys.argv)
-if arglen == 1:
-    print("{} arguments.".format(arglen - 1))
+arglen = len(sys.argv - 1)
+if arglen == 0:
+    print("{} arguments.".format(arglen))
 else:
-    if arglen == 2:
-        print("{} argument:".format(arglen - 1))
+    if arglen == 1:
+        print("{} argument:".format(arglen))
     else:
-        print("{} arguments:".format(arglen - 1))
-    for i in range(len(argvec)):
-        if i > 0:
-            print("{}: {}".format(i , argvec[i]))
+        print("{} arguments:".format(arglen))
+    for i in range(arglen):
+            print("{}: {}".format(i + 1 , argvec[i + 1]))
