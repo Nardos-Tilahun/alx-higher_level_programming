@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-import sys
+if __name__ = "__main__":
+    import sys
 
 argvec = sys.argv
 arglen = len(sys.argv)
