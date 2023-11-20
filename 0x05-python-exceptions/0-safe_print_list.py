@@ -4,7 +4,7 @@ def safe_print_list(my_list=[], x=0):
         for i in range(x):
             print("{}".format(my_list[i]), end="")
         print()
-        return (my_list[x-1])
+        return (x)
     except IndexError:
         print()
-        return (my_list[len(my_list) - 1])
+        return (len(my_list))
