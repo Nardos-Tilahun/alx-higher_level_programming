@@ -7,7 +7,7 @@ def list_division(my_list_1, my_list_2, list_length):
         except ZeroDivisionError:
             print("divison by 0")
             b = 0
-        except (TypeError):
+        except (ValueError, TypeError):
             print("wrong type")
             b = 0
         except IndexError:
@@ -15,4 +15,4 @@ def list_division(my_list_1, my_list_2, list_length):
             b = 0
         finally:
             a.append(b)
-    return (a)
+    return a
