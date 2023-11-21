@@ -8,15 +8,15 @@ class Square:
             it checks the size type and value"""
     def __init__(self, size=0):
         """ This is to create initalization for size"""
-        self.__size = size
+        self.siz = size
 
     @property
-    def size(self):
+    def siz(self):
         """ This is a getter for the size"""
         return self.__size
 
-    @size.setter
-    def size(self, value):
+    @siz.setter
+    def siz(self, value):
         """ This is a setter fot the size"""
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
