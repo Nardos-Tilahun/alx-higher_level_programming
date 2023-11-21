@@ -3,7 +3,7 @@
 
 
 class Square:
-    """ This is a square class that has 
+    """ This is a square class that has
             an attribute of size (Private Instance)
             it checks the size type and value"""
     def __init__(self, size=0):
