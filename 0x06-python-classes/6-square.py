@@ -46,10 +46,12 @@ class Square:
 
     def my_print(self):
         """ This is to print the squares to the stdout"""
-        for i in range(0, self.__size):
+        for k in range(self.__position[1]):
+            print()
+        for j in range(0, self.__size):
             for k in range(self.__position[0]):
                 print(" ", end="")
-            for j in range(0, self.__size):
+            for m in range(self.__size):
                 print("#", end="")
             print()
         if self.__size == 0:
