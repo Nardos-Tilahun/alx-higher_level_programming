@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-""" This is a module to write a class Square"""
 
 
 class Square:
