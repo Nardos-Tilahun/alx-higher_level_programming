@@ -34,9 +34,9 @@ class Square:
     @position.setter
     def position(self, value):
         """ This is to check the position is valid and set to attribute"""
-        if (isinstance(value, tuple) and len(value) == 2 and \
-                (isinstance(i, int) and i >= 0  for i in value)):
-            self.__position = value
+        if (isinstance(value, tuple) and len(value) == 2):
+            if (all(isinstance(i, int) and i >= 0 for i in value)):
+                self.__position = value
         else:
             raise TypeError("position must be a tuple of 2 positive integers")
 
@@ -49,10 +49,6 @@ class Square:
         for k in range(self.__position[1]):
             print()
         for j in range(0, self.__size):
-            for k in range(self.__position[0]):
-                print(" ", end="")
-            for m in range(self.__size):
-                print("#", end="")
-            print()
+            print(" " * self.__position[0] + "#" * self.__size)
         if self.__size == 0:
             print()
