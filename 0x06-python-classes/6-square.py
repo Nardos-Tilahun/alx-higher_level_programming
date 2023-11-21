@@ -8,8 +8,8 @@ class Square:
             it checks the size type and value"""
     def __init__(self, size=0, position=(0, 0)):
         """ This is to create initalization for size"""
-        self.__size = size
-        self.__position = position
+        self.size = size
+        self.position = position
 
     @property
     def size(self):
