@@ -6,7 +6,7 @@ class Square:
     """ This is a square class that has
             an attribute of size (Private Instance)
             it checks the size type and value"""
-    def __init__(self, size=0, position=(0,0)):
+    def __init__(self, size=0, position=(0, 0)):
         """ This is to create initalization for size"""
         self.__size = size
         self.__position = position
@@ -34,7 +34,8 @@ class Square:
     @position.setter
     def position(self, value):
         """ This is to check the position is valid and set to attribute"""
-        if (isinstance(value, tuple) and len(value) == 2):
+        if (isinstance(value, tuple) and len(value) == 2 and \
+                (isinstance(i, int) and i >= 0  for i in value)):
             self.__position = value
         else:
             raise TypeError("position must be a tuple of 2 positive integers")
