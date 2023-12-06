@@ -16,8 +16,9 @@ def pascal_triangle(n):
         for j in range(1, i):
             try:
                 pl.append(pt[i-1][j-1] + pt[i-1][j])
-            except:
+            except (e):
                 continue
+                print(e)
         pl.append(1)
         pt.append(pl)
 
