@@ -10,4 +10,3 @@ def append_write(filename="", text=""):
     with open(filename, 'a') as file:
         fileA = file.write(text)
     return len(text)
-

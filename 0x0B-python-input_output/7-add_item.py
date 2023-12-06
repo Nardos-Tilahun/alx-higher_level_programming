@@ -15,4 +15,3 @@ except:
 for a in range(1, len(argv)):
     my_list.append(argv[a])
 save_to_json_file(my_list, filename)
-

@@ -15,4 +15,3 @@ def append_after(filename="", search_string="", new_string=""):
                 stringme += new_string
     with open(filename, mode="w") as f:
         f.write(stringme)
-

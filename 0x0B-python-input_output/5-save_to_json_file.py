@@ -7,4 +7,3 @@ def save_to_json_file(my_obj, filename):
     import json
     with open(filename, 'w') as fo:
         json.dump(my_obj, fo)
-

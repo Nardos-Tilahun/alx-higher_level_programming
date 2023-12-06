@@ -12,4 +12,3 @@ def write_file(filename="", text=""):
         fileW = file.write(text)
         file.close
     return len(text)
-
