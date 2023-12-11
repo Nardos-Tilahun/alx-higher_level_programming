@@ -3,6 +3,7 @@
 
 from models.base import Base
 
+
 class Rectangle(Base):
     '''Class that inherit from the base'''
 
@@ -12,7 +13,7 @@ class Rectangle(Base):
         self.x = x
         self.y = y
         super().__init__(id)
-    
+
     @property
     def width(self):
         '''getter module that return width'''
@@ -23,7 +24,7 @@ class Rectangle(Base):
         '''width module that set the width'''
         self.check_setter("width", value)
         self.__width = value
-    
+
     @property
     def height(self):
         '''module that return height'''
@@ -34,7 +35,7 @@ class Rectangle(Base):
         '''module that set a value to the private member height'''
         self.check_setter("height", value)
         self.__width = value
-    
+
     @property
     def x(self):
         '''getter module that return x'''
@@ -45,7 +46,7 @@ class Rectangle(Base):
         '''width module that set the x'''
         self.check_setter("x", value)
         self.__x = value
-    
+
     @property
     def y(self):
         '''getter module that return y'''
@@ -56,22 +57,19 @@ class Rectangle(Base):
         '''module that set a value to the private member y'''
         self.check_setter("y", value)
         self.__y = value
-    
+
     @staticmethod
     def check_setter(parameter, value):
         '''static method that valid the parameter'''
 
-        if type(value) != int:
+        if type(value) is not int:
             raise TypeError("{} must be an integer".format(parameter))
         if parameter == "x" or parameter == "y":
             if value < 0:
                 raise ValueError("{} must be greater than 0".format(parameter))
-        elif value <=0:
+        elif value <= 0:
             raise ValueError("{} must be > 0".format(parameter))
 
     def __str__(self):
         ''' inistane writing'''
-
-        return "[Rectangle] {} {}/{} - {}/{}".format(self.id, self.x, self.y, self.width, self.height)
-
-
+        return "[Rectangle] {} {}/{} -{}/{}".format(self.id, self.x, self.y, self.width, self.height)
