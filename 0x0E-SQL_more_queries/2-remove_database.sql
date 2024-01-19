@@ -1,2 +1,9 @@
--- this to Remove database if it exists
-DROP DATABASE IF EXISTS hbtn_0c_0;
+-- Database hbtn_0d_2 and the user user_0d_2
+-- SELECT privilege on hbtn_0d_2 with password user_0d_2_pwd
+CREATE DATABASE IF NOT EXISTS hbtn_0d_2;
+CREATE USER IF NOT EXISTS 'user_0d_2'@'localhost'
+    IDENTIFIED BY 'user_0d_2_pwd';
+GRANT SELECT
+    ON hbtn_0d_2.*
+    TO 'user_0d_2'@'localhost';
+FLUSH PRIVILEGES;
