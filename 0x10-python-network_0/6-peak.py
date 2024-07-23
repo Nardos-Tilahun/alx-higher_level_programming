@@ -11,8 +11,7 @@ def find_peak(list_of_integers):
         int: peak(s)
     """
     list_ = list_of_integers
-    #if there is no list of integers return None
-
+    # if there is no list of integers return None
     if list_ == []:
         return None
     length = len(list_)
@@ -27,4 +26,3 @@ def find_peak(list_of_integers):
         else:
             start = mid + 1
     return list_[start]
-
