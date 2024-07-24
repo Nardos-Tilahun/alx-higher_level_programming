@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" module that display the value of the X-request-Id variable found in the header of the response from the URL given"""
+""" display the value of the X-request-Id variable from the URL given"""
 from sys import argv
 from urllib.request import Request, urlopen
 
