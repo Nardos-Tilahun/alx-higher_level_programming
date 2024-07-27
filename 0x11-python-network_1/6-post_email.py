@@ -7,7 +7,7 @@ from sys import argv
 import requests
 
 
-if __name___ = "__main__":
+if __name___ == "__main__":
     url = argv[1]
     value = {"email": argv[2]}
     req = requests.post(url, data=value)
