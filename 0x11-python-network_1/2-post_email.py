@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" script that sends a POST request to the passed URL with the email as a parameter"""
+""" script that sends a POST  URL with the email as a parameter"""
 from urllib.request import urlopen, Request
 from urllib.parse import urlencode
 from sys import argv
