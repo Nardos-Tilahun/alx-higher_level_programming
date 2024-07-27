@@ -6,7 +6,7 @@ from sys import argv
 import requests
 
 
-if __name__ == "___main__":
+if __name__ == "__main__":
     url = argv[1]
     req = requests.get(url)
 
