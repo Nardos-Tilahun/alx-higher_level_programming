@@ -3,7 +3,7 @@
 sends a request to the URL and 
 displays the body of the response (decoded in utf-8)."""
 
-from os import argv
+from sys import argv
 from urllib.request import Request, urlopen
 from urllib.error import HTTPError
 
